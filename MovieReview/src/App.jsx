@@ -1,10 +1,13 @@
 import React from 'react'
 import Navbar from './components/navbar'
-import home from './pages/Home'
-import about from './pages/About'
-import movie from './pages/Movie'
-import journal from './pages/Journal'
-import { Route,Routes, BrowserRouter as Router } from 'react-router-dom'
+import Home from "./components/home";
+import About from './pages/About'
+import Movie from './pages/Movie'
+import Journal from './pages/Journal'
+import MovieDetails from './components/movieDetails';
+import SearchResult from './components/searchResult';
+import Description from "./components/description";
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
@@ -13,15 +16,18 @@ const App = () => {
         <Navbar/>
         <div>
         <Routes>
-          <Route exact path="/" component={home}></Route>
-          <Route path="/about" component={about}></Route>
-          <Route path="/movie" component={movie}></Route>
-          <Route path="/journal" component={journal}></Route>
+          <Route exact path="/" element={<Home/>}/>
+          <Route path="/movies/:imdbID" element={<MovieDetails/>} />
+          <Route path="/search/:query" element={<SearchResult/>} />
+          <Route path="/about" element={<About/>}/>
+          <Route path="/movie" element={<Movie/>}/>
+          <Route path="/journal" element={<Journal/>}/>
         </Routes>
           
         </div>
       </Router>
     </div>
+    
   )
 }
 
