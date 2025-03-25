@@ -7,12 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 eslint.config.js*
-<<<<<<< HEAD
 package-lock.js*
 package.json*
 vite.config.js*
-=======
->>>>>>> 7a443e933b14b782d63cf3fe067fd4043d2f48eb
+
 
 
 node_modules

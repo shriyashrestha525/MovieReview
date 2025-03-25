@@ -1,0 +1,109 @@
+.description{
+    padding: 30px;
+    padding-right: 50px;
+    padding-top: 150px;
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    
+}
+
+.head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+   
+    
+}
+
+#movieTitle{
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#movieImg{
+    width: 25vw;
+}
+
+.container{
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 20px;
+    width: 75vw;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+.details .active{
+    color: green;
+}
+
+
+.actor, .gen, .lan{
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgba(251, 248, 248, 0.833);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+#year{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.castName, .genreName, .language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.awardName{
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .description{
+        width: 100vw;
+    }
+
+    
+    #year{
+        display: flex;
+        gap: 20px;
+    }
+
+    #movieTitle{
+        font-size: 20px;
+    }
+
+    #movieImg{
+        width: 30vw;
+    }
+
+    
+}
