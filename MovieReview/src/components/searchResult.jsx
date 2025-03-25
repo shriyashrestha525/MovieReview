@@ -4,18 +4,21 @@ import { Link, useParams } from 'react-router-dom';
 import './searchResult.css'
 
 const SearchResult = () => {
-  const { query } = useParams(); // Get the query from the URL
+  const { input } = useParams(); // Get the query from the URL
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const[backgroundImage, setBackgroundImage]=useState("");
+  console.log("search data", input);
 
   useEffect(() => {
     const fetchMovies = async () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=f8d83dba`);
+        const response = await fetch(`https://www.omdbapi.com/?s=${input}&apikey=f8d83dba`);
         const data = await response.json();
+        
         if (data.Response === 'True') {
           setMovies(data.Search);
         } else {
@@ -29,10 +32,10 @@ const SearchResult = () => {
     };
 
     fetchMovies();
-  }, [query]); // Re-fetch when query changes
+  }, [input]); // Re-fetch when query changes
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading) return <div className='loading'>Loading...</div>;
+  if (error) return <div className='error'>{error}</div>;
 
   return (
     <div className="search-results">
@@ -40,9 +43,14 @@ const SearchResult = () => {
         {movies.map((movie) => (
           <li key={movie.imdbID}>
             <Link to={`/movies/${movie.imdbID}`}>
-              <img src={movie.Poster} alt={movie.Title} width="100" />
-              <h3>{movie.Title}</h3>
+            <div className='movie-info'>
+              <img
+                src={movie.Poster === 'N/A' ? 'https://via.placeholder.com/100x150' : movie.Poster}
+                width="100"
+              />
+              <h3 className='movie-title'>{movie.Title}</h3>
               <p>{movie.Year}</p>
+              </div>
             </Link>
           </li>
         ))}
