@@ -18,7 +18,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route path="/movies/:imdbID" element={<MovieDetails/>} />
-          <Route path="/search/:query" element={<SearchResult/>} />
+          <Route path="/search/:input" element={<SearchResult/>} />
           <Route path="/about" element={<About/>}/>
           <Route path="/movie" element={<Movie/>}/>
           <Route path="/journal" element={<Journal/>}/>

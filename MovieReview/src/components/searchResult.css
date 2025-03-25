@@ -1,0 +1,51 @@
+.search-results{
+    background-color: #87B3BD;
+    padding:150px;
+    
+}
+ ul{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create flexible columns */
+    gap: 20px; /* Spacing between the cards */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+.movie-info{
+    background-color: #76a5b1;
+    padding:20px;
+    border-radius: 20px;
+    height:300px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h3{
+    
+    padding:10px 10px 00px 10px;
+}  
+h3:hover{
+    color:black; 
+}
+
+p:hover{
+    color:black;
+}
+.loading,
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #87B3BD;
+    height:100vh;
+    font-size: 30px;
+    color:white;
+
+}

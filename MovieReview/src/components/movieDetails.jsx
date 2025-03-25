@@ -1,6 +1,7 @@
 // MovieDetails.js
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './movieDetails.css';
 
 const MovieDetails = () => {
   const { imdbID } = useParams(); // Extract imdbID from the URL
@@ -36,7 +37,7 @@ const MovieDetails = () => {
   return (
     <div className="movie-details">
       <h1>{movieDetails.Title}</h1>
-      <img src={movieDetails.Poster} alt={movieDetails.Title} />
+      <img src={movieDetails.Poster} alt={movieDetails.Title} id='movie-poster' />
       <p><strong>Plot:</strong> {movieDetails.Plot}</p>
       <p><strong>Year:</strong> {movieDetails.Year}</p>
       <p><strong>Genre:</strong> {movieDetails.Genre}</p>
