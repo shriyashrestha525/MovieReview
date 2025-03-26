@@ -18,6 +18,7 @@ const navbar = () => {
     };
   };
   const handleKeyPress = (e) => {
+    console.log(e);
     if (e.key === 'Enter') {
       handleSearch();
     }

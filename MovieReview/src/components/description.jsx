@@ -6,11 +6,6 @@ function Description() {
     const movie = location.state?.movie;
     const [isActive, setIsActive] = useState('cast');
    
-
-    
-
-
-    
     const handleCast = (value)=>{
       setIsActive(value);
     };

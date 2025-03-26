@@ -10,7 +10,7 @@ function MovieCard(props) {
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                navigate('/description', {state:{movie: data}});
+                navigate('/movies', {state:{id: data.imdbID}});
                 
             })
             .catch(error => console.log(error))

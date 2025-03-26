@@ -8,7 +8,7 @@ const SearchResult = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const[backgroundImage, setBackgroundImage]=useState("");
+  
   console.log("search data", input);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const SearchResult = () => {
       try {
         const response = await fetch(`https://www.omdbapi.com/?s=${input}&apikey=f8d83dba`);
         const data = await response.json();
-        
+
         if (data.Response === 'True') {
           setMovies(data.Search);
         } else {

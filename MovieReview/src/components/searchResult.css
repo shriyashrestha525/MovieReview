@@ -16,9 +16,11 @@
     justify-content: center;
     align-items: center;
     
+    
 }
 .movie-info{
     background-color: #76a5b1;
+  
     padding:20px;
     border-radius: 20px;
     height:300px;
@@ -38,7 +40,7 @@ h3:hover{
     color:black; 
 }
 
-p:hover{
+.movie-info p :hover{
     color:black;
 }
 .loading,
@@ -52,3 +54,4 @@ p:hover{
     color:white;
 
 }
+    
