@@ -19,6 +19,7 @@ function MovieCard(props) {
   return (
     <div className='card' onClick={()=>handleClick(props.title)} >
       <img id = 'movieCard' src={props.imageUrl} alt="image" />
+      <h4>{props.title}</h4>
     </div>
   )
 }

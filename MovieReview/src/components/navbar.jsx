@@ -25,6 +25,9 @@ const navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const handleLogin=(e)=>{
+    navigate(`/login`);
+  }
 
 
   return (
@@ -44,6 +47,9 @@ const navbar = () => {
       <div className='search'>
         <input className='search-box' type="text" placeholder='search for movies...' value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={handleKeyPress} />
         <button className='search-btn' onClick={handleSearch}>< FaSearch /></button>
+      </div>
+      <div className='login-container'>
+        <button className='login-btn' onClick={handleLogin}>Log In</button>
       </div>
 
 

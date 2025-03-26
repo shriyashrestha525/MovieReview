@@ -7,6 +7,8 @@ import Movie from './pages/Movie'
 import Journal from './pages/Journal'
 import MovieDetails from './components/movieDetails';
 import SearchResult from './components/searchResult';
+import Login from './components/Login'
+import Signup from './components/Signup'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 import about from './pages/About'
@@ -28,6 +30,8 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/movie" element={<Movie/>}/>
         <Route path="/journal" element={<Journal/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
    
 
       </Routes>

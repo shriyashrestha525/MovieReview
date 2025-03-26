@@ -6,6 +6,7 @@
     align-items: center;
     padding: 15px;
     width: 100%;
+    flex-grow: 1;
 }
 
 #start{
@@ -29,8 +30,9 @@
 
 .cards{
     display: grid;
-    justify-items: center;
     align-items: center;
+    justify-items: center;
+    gap: 25px;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     

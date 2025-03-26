@@ -28,7 +28,7 @@
     border-radius: 10px;
     
 }
-h1 {
+.heading h1 {
     margin-left: 50px;
     margin-top: 30px;
    
@@ -46,7 +46,7 @@ h1 {
     
 }
 
-p{
+.body p{
     padding:4px;
     color:white;
     

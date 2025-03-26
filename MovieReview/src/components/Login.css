@@ -1,0 +1,125 @@
+.login-form-container {
+    /* background-color: #72878b; */
+    background-image: url('src/assets/background.jpg');
+    background-position: center;
+    width:100vw;
+    object-fit:fill;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-card {
+    background: rgba(187, 209, 212, 0.411);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    width: 30%;
+    height: 60vh;
+    border-radius: 20px;
+    margin-top: 80px;
+    /* margin-right: 700px; */
+}
+
+.login-form-card h1 {
+    /*background-color: rgb(158, 89, 89);*/
+    margin: 10px;
+    text-align: center;
+
+}
+
+.login-form {
+    margin: 0px 50px;
+    padding: 10px 50px;
+    /*background-color: black;*/
+}
+
+.login-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    /* background-color:blue;  */
+}
+
+/* .login-form a { 
+    font-size: 14px;
+    color: #f7f7fa;
+    margin-top: 9px;
+/* } */
+
+.login-form a:hover {
+    color: rgb(78, 78, 250);
+}
+
+.username,
+.password {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    text-align: start;
+    padding: 5px;
+    margin-bottom: 12px;
+    background-color: #eee;
+}
+
+.username,
+.password:focus {
+    outline: none;
+}
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width:250px;
+    /* background-color: aqua; */
+}
+.checkbox-container input{
+    width:11px;
+    height:11px;
+    cursor: pointer;
+    margin: 0;
+    
+}
+.checkbox-container label{
+    display: block;
+    font-size: 13px;
+    padding-top:6px;
+    /* background-color: black; */
+    margin-right: 13px;
+}
+.checkbox-container a{
+    display: block;
+    padding-left: 0px 20px 5px;
+    font-size: 13px;
+}
+.login-form .login-btn{
+    width:200px;
+    margin-top: 10px;
+    background-color: #0d373f; 
+}
+.signup-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* background-color: blue; */
+    width:200px;
+    margin: 5px;
+    
+    /* gap: 5px; */
+}
+.signup-container label{
+    display: block;
+    font-size: 12px;
+    padding: 12px 0px 6px;
+    /* background-color: rgb(158, 13, 13); */
+}
+.signup-container a{
+    display: block;
+    /* background-color: rgb(98, 199, 199); */
+    font-size: 12px;
+    padding-right: 8px;
+}

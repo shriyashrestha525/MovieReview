@@ -1,11 +1,12 @@
 .header{
     max-width: 100%;
-    height: 80vh;
+    height: 500px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     border: none;
+    background: radial-gradient(ellipse farthest-side, transparent, #87B3BD);
     
 }
 

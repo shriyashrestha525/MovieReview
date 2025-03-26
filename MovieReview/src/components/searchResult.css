@@ -3,7 +3,8 @@
     padding:150px;
     
 }
- .search-results ul{
+ 
+ul{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create flexible columns */
     gap: 20px; /* Spacing between the cards */
