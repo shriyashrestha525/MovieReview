@@ -8,7 +8,7 @@ const SearchResult = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  
+
   console.log("search data", input);
 
   useEffect(() => {
@@ -43,13 +43,13 @@ const SearchResult = () => {
         {movies.map((movie) => (
           <li key={movie.imdbID}>
             <Link to={`/movies/${movie.imdbID}`}>
-            <div className='movie-info'>
-              <img
-                src={movie.Poster === 'N/A' ? 'https://via.placeholder.com/100x150' : movie.Poster}
-                width="100"
-              />
-              <h3 className='movie-title'>{movie.Title}</h3>
-              <p>{movie.Year}</p>
+              <div className='movie-info'>
+                <img
+                  src={movie.Poster === 'N/A' ? 'https://via.placeholder.com/100x150' : movie.Poster}
+                  width="100"
+                />
+                <h3 className='movie-title'>{movie.Title}</h3>
+                <p>{movie.Year}</p>
               </div>
             </Link>
           </li>

@@ -1,9 +1,9 @@
 .search-results{
-    background-color: #87B3BD;
+    background-color: #72878b;
     padding:150px;
     
 }
- ul{
+ .search-results ul{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create flexible columns */
     gap: 20px; /* Spacing between the cards */
@@ -14,30 +14,37 @@
     align-items: center;
     
     
+    
 }
 .movie-info{
-    background-color: #76a5b1;
-  
-    padding:20px;
-    border-radius: 20px;
+    
+    background: rgba(187, 209, 212, 0.411);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     height:300px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(8px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
-h3{
+.movie-info h3{
+    padding:10px ;
+    margin: 0px 20px;
+    text-align: center;
     
-    padding:10px 10px 00px 10px;
 }  
-h3:hover{
+.movie-info h3:hover{
     color:black; 
 }
+.movie-info p{
+    padding:5px;
+}  
 
-.movie-info p :hover{
+.movie-info p:hover{
     color:black;
 }
 .loading,
